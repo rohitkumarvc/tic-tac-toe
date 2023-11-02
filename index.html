@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic-tac-toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="user-info">
+        <h1>Tic-Tac-Toe</h1>
+        <h3>User Info</h3>
+        <br>
+        <label for="player1">Player 1 Name:</label>
+        <input type="text" id="player1">
+        <br><br>
+        <label for="player1">Player 2 Name:</label>
+        <input type="text" id="player2">
+        <br>
+        <button class = "user-input">Start Game</button>
+    </div>
+
+    <main>
+        <p class = "turn">Player 1's turn</p>
+        <br>
+        <h1>Tic-Tac-Toe</h1>
+        <div class="grid">
+            <div class="a1 cell"></div>
+            <div class="a2 cell"></div>
+            <div class="a3 cell"></div>
+            <div class="a4 cell"></div>
+            <div class="a5 cell"></div>
+            <div class="a6 cell"></div>
+            <div class="a7 cell"></div>
+            <div class="a8 cell"></div>
+            <div class="a9 cell"></div>
+        </div>
+
+        <button class = "reset">Reset</button>
+    </main>
+
+    <div class="results">
+
+        <h2>Results:</h2>
+        <br>
+        <p><span class = "winner">X</span> won the Match 🎉🎉</p>
+        <button class = "btn">Ok</button>
+    </div>
+
+</body>
+
+<script src="index.js"></script>
+</html>

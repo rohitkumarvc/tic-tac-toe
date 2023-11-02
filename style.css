@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu+Mono&family=Ubuntu:wght@500&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu Mono', monospace;
+    padding: 0px;
+    margin: 0px;
+    background-color: lightgoldenrodyellow
+}
+
+.user-info{
+    /* display:none; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    border: 3px solid black;
+    text-align: center;
+}
+
+#player1, #player2{
+    padding: 2px 5px;
+}
+
+main{
+    display: none;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    margin-bottom: 20px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    justify-content: center;
+}
+
+.a1{
+    border-top-left-radius: 25px;
+}
+
+.a3{
+    border-top-right-radius: 25px;;
+}
+
+.a7{
+    border-bottom-left-radius: 25px;
+}
+.a9{
+    border-bottom-right-radius: 25px;
+}
+
+.cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    font-size: 100px;
+    cursor: pointer;
+}
+
+.cell:hover{
+    background-color: rgb(248, 248, 235);
+}
+
+button{
+    height: 30px;
+    width: 100px;
+    margin: 20px;
+    box-shadow: 3px 3px;
+}
+
+button:hover{
+    scale: 0.95;
+    background-color: rgb(248, 248, 235);
+}
+
+.results{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    height: 150px;
+    width: 300px;
+    border: 3px solid black;
+}
+
+h2{
+    padding-bottom: 5px;
+    text-decoration: underline;
+}
+
+p{
+    font-size: 20px;
+}
